@@ -91,6 +91,11 @@ public class ThsSpider {
 	}
 
 	public void start() {
+//		start1();
+		log.info("同花顺行业爬虫已注销");
+		MsgPushServer.pushToSystem("同花顺行业爬虫已注销");
+	}
+	public void start1() {
 		int date = Integer.valueOf(DateUtil.getTodayYYYYMMDD());
 		if (!tradeCalService.isOpen(date)) {
 			log.info("非交易日");
