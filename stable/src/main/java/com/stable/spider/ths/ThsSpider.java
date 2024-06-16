@@ -92,6 +92,7 @@ public class ThsSpider {
 
 	public void start() {
 //		start1();
+		System.err.println();
 		log.info("同花顺行业爬虫已注销");
 		MsgPushServer.pushToSystem("同花顺行业爬虫已注销");
 	}
